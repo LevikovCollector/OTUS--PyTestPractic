@@ -7,8 +7,8 @@ def fix_upper_string():
     return 'otus'.upper()
 
 
-def test_upper_func(fix_return_upper_string):
-    assert fix_return_upper_string == 'OTUS'
+def test_upper_func(fix_upper_string):
+    assert fix_upper_string == 'OTUS'
 
 # Проверка конкатенации строк
 @pytest.mark.parametrize('conc_param', ['python', 'world'])
